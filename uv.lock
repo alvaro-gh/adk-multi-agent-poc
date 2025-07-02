@@ -7,7 +7,7 @@ resolution-markers = [
 ]
 
 [[package]]
-name = "adk-linkedin"
+name = "adk-multi-agent-poc"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
