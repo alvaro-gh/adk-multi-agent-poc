@@ -1,0 +1,9 @@
+# Directory for cookies
+data/
+
+# Python
+__pycache__/
+.venv/
+
+# Other
+later/

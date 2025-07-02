@@ -1,0 +1,12 @@
+[project]
+name = "adk-multi-agent-poc"
+version = "0.1.0"
+description = "Using Google ADK and browser-use for tasks."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "browser-use>=0.4.2",
+    "google-adk>=1.5.0",
+    "langchain-openai>=0.3.27",
+]
