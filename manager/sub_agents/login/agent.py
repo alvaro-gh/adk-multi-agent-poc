@@ -25,13 +25,14 @@ async def linkedin_login() -> str:
             await f.write(content)
 
     session = BrowserSession(
-        storage_state=state_path,
-        user_data_dir=None,
-        headless=True,
+        #storage_state=state_path,
+        user_data_dir=current_path.joinpath("manager/data/"),
+        headless=False,
+        chromium_sandbox=False,
     )
     agent = BrowserAgent(
         task=f"""
-        Go to linkedin.com and check if the user is logged in.
+        Go to https://www.linkedin.com/feed and check if the user is logged in.
         If the user is not logged then log in using the following credentials:
         - Email: {user}
         - Password (inside the quotes): '{pswd}'
